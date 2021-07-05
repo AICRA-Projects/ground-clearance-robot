@@ -33,3 +33,6 @@ curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo ap
 * apt search ros-melodic
 * Environment setup : echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
 source ~/.bashrc
+* Dependencies for building packages : sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential
+* Initialize rosdep : sudo apt install python-rosdep       sudo rosdep init
+
