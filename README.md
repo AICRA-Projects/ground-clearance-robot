@@ -36,3 +36,20 @@ source ~/.bashrc
 * Dependencies for building packages : sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential
 * Initialize rosdep : sudo apt install python-rosdep       sudo rosdep init
 
+## Rplidar setup :
+RPLIDAR is a low cost LIDAR sensor suitable for indoor robotic SLAM application. It provides 360 degree scan field, 5.5hz/10hz rotating frequency with guaranteed 8 meter ranger distance, current more than 16m for A2 and 25m for A3 . By means of the high speed image processing engine designed by RoboPeak, the whole cost are reduced greatly, RPLIDAR is the ideal sensor in cost sensitive areas like robots consumer and hardware hobbyist.
+#### Step 1: Install RPLIDAR ROS Package
+* mkdir -p ~/catkin_ws/src
+* cd ~/catkin_ws/
+* catkin_make
+* and source it to bashrc:
+
+* echo "source $HOME/catkin_ws/devel/setup.bash" >> ~/.bashrc
+Okay, we’re ready to start installing RPLIDAR ROS package.
+
+* cd src
+* sudo git clone  https://github.com/Slamtec/rplidar_ros.git
+* catkin_make
+Wait for the package compilation to finish. Try launching the package to see if the compilation was successful:
+
+* roslaunch rplidar_ros rplidar.launch
