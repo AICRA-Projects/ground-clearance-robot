@@ -53,3 +53,15 @@ Okay, we’re ready to start installing RPLIDAR ROS package.
 Wait for the package compilation to finish. Try launching the package to see if the compilation was successful:
 
 * roslaunch rplidar_ros rplidar.launch
+## Step 2 : 
+* Setup the service file and udev files for autonomous active of lidar
+* Define the script or code of LASER Scan data 
+## Step 3:
+* Define the decision making script for motor control process
+* Follow the arduino code 
+# Reference :
+* https://www.slamtec.com/en/Lidar/A3
+* http://wiki.ros.org/rplidar
+* https://www.theconstructsim.com/read-laserscan-data/
+
+
