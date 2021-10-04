@@ -1,6 +1,14 @@
 # ground-clearance-robot
 A Robot that can move autonomously from place to place to achieve a set of goals. Mobile robots have been around for some time. If we think about it on the most basic level, the small vacuum cleaner that runs along your floor is a mobile robot. Since then, the technology has advanced significantly. Today, they are used in factories, for military operations, in healthcare, for search and rescue, as security guards, and in homes.
 AGVs have been the traditional method for autonomous transport, but mobile robots have adapted to provide the support demanded by today’s end user, such as less predictable floor layouts and workstation use.
+
+## how to operate
+### step 1:  Give Power to the robot by connecting White Usb Cable with USB connector of black power bank is in downward 
+### step 2:   press "On" Red switch and Green Light will get ON in 360 degree RPlidar   
+### step 3:   wait for the RPlidar stops or delay for fraction of seconds 
+### step 4:  After the delay motor activation and robot comes in motion
+### step 5:  Robot will start moving without getting collisions 
+
 ## Hardwares:
 * I shaped Motor 300rpm
 * Arduino Nano 
