@@ -167,7 +167,7 @@ To disable a service,
 sudo systemctl disable mavros.service
 ```
 # conclusion: 
-Ground clearance robots have a major application in Automated terrain vehicles also known as ATVs. ATVs sees large use in off road applications, such as army operation, widelife drive, competitive sports
+Ground clearance robots have a major application in Automated guided vehicles also known as AgVs. AgVs sees large use in industrial environment for carrying good from one part of factory to other on a predefined path. It highly increases the speed of work as well as quality of life for workers.  
 
 # Reference :
 * https://www.slamtec.com/en/Lidar/A3
