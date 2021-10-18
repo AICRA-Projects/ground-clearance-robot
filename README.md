@@ -9,6 +9,14 @@ AGVs have been the traditional method for autonomous transport, but mobile robot
 ### step 4:  After the delay motor activation and robot comes in motion
 ### step 5:  Robot will start moving without getting collisions 
 
+## Circuit diagram 
+![AI Based Robot with lidar](https://user-images.githubusercontent.com/42414598/137723842-76d8d8a7-b39b-460e-8004-18cbd9bdf3fb.png)
+# RPlidar setup
+![lidar working](https://user-images.githubusercontent.com/42414598/137724480-582c592d-b64c-48c0-b6ca-113f5986a297.png)
+# RPlidar Mapping ROS RVIZ 
+![rpilidar_mapping](https://user-images.githubusercontent.com/42414598/137724649-0db85b84-32b7-4fca-9a1b-c5c8d3c63531.png)
+
+
 ## Hardwares:
 * I shaped Motor 300rpm
 * Arduino Nano 
