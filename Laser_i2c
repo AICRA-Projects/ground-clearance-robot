@@ -1,0 +1,45 @@
+"""Laser data interface with arduino by I2C"""
+
+#!/usr/bin/env python
+import rospy
+from sensor_msgs.msg import LaserScan
+import smbus
+import time
+
+bus = smbus.SMBus(1)
+addr = 0x8
+input_data =[]
+def writenumber(val):
+    bus.write_byte(addr,val)
+    return -1
+
+def callback(msg):
+    print len(msg.ranges)
+
+rospy.init_node('scan_values')
+sub = rospy.Subscriber('/scan', LaserScan, callback)
+input_data.append[msg.ranges]
+""" every input data from LIDAR is having Resolution 0.5 i.e 180 x 0.5 = 90 degree 
+Hence right , left , forward , backward define on the basis of angle value """
+
+if input_data[0] < 35:
+    writenumber(1)
+elif input_data[90] < 35:
+    writenumber(2)
+elif input_data[180] < 35:
+    writenumber(3)
+elif input_data[270] < 35:
+    writenumber(4)
+elif input_data[360] < 35:
+     writenumber(5)
+elif input_data[450] < 35:
+     writenumber(6)
+elif input_data[540] < 35:
+     writenumber(7)
+elif input_data[630] < 35:
+     writenumber(8)
+elif input_data[720] < 35:
+     writenumber(0)
+
+
+rospy.spin()
