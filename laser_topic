@@ -29,8 +29,8 @@ while not rospy.is_shutdown():
     scan.ranges = []
     scan.intensities = []
     for i in range(0, num_readings):
-        scan.ranges.append(1.0 * count)  # fake data
-        scan.intensities.append(1)  # fake data
+        scan.ranges.append(1.0 * count)  
+        scan.intensities.append(1) 
 
     scan_pub.publish(scan)
     count += 1
